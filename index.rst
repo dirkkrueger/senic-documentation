@@ -128,6 +128,24 @@ One of its core modules is a sophisticated *event model* and *state machine* tha
 Oh, and it, too, is written in Python.
 
 
+Provisioning the Hub with Wi-Fi: Bluenet
+========================================
+
+A customer's `first experience while unboxing a product is crucial <https://blog.ordoro.com/2016/04/19/7-best-unboxing-experiences/>`_.
+The very next thing after connecting the Senic Hub to a power plug is to connect the Hub to the local Wi-Fi.
+Only then we can automatically find all the user's smart devices in their home network. Providing Wi-Fi and internet access to the Hub furthermore enables our integrated Alexa speech service to work.
+How does the user however tell the Hub which Wi-Fi to connect to? Since we want to make this process as simple as possible, only wireless technologies qualify for sharing Wi-Fi credentials with the Hub.
+
+Creating an adhoc Wi-Fi network quickly disqualified as a technology to send Wi-Fi credentials to the Hub.
+We don't want our users to manually change their active Wi-Fi connection on their smartphones to use the Hub's ad-hoc Wi-Fi network.
+After evaluating `various wireless provisioning methods <https://www.linkedin.com/pulse/wifi-configuration-iot-devices-dan-walkes>`_, we decided to go with the best solution and implemented the world's first Wi-Fi provisioning library for Bluetooth Low Energy-enabled Linux devices and we call it `Bluenet <https://github.com/getsenic/senic-hub/tree/master/senic_hub/bluenet>`_.
+
+Using Bluenet, the Hub's mobile setup app is able to automatically discover and connect to the Hub via Bluetooth Low Energy.
+After connecting, the app requests and presents all Wi-Fi networks (SSID names) that the Hub is seeing nearby.
+We ask the user to then select his own Wi-Fi home network and let him enter his password.
+Now the Hub tries to connect its Wi-Fi adapter to the user's network and lets our setup app know if it succeeded.
+Once the Hub is connected to the user's Wi-Fi network all further communications will continue through the Hub's REST API over HTTP.
+
 Details, details
 ================
 
