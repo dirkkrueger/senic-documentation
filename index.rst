@@ -146,6 +146,7 @@ We ask the user to then select her own Wi-Fi home network and let her enter her 
 Then the Hub tries to connect its Wi-Fi adapter to the user's network and lets our setup app know whether it succeeded.
 Once the Hub is connected to the user's Wi-Fi network all further communications will continue through the Hub's REST API over HTTP.
 
+
 Details, details
 ================
 
@@ -156,3 +157,4 @@ Below you can find links to the nitty-gritty details
 
     senic-hub/index
     senic-os/README
+    nuimo-sdks/index
