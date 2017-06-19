@@ -5,14 +5,14 @@ Senic Hub Technical Documentation
 *********************************
 
 :Author: Senic GmbH
-:Version: |version|
+:Last Updated: |today|
 
 
 What is the Senic Hub
 =====================
 
-The Senic Hub is a **Bluetooth, Bluetooth Low Energy and Wi-Fi-enabled smart home hub** that allows a user to connect to their smart devices (such as Sonos, Philips Hue etc).
-It also works together with the `Senic Nuimo <https://www.senic.com/en/nuimo>`_, our very own BLE controller for smart devices and significantly extends its usefulness by eliminating the need to having it connected to a smart phone or tablet.
+The Senic Hub is a **Bluetooth 3.0, Bluetooth Low Energy 4.0 and Wi-Fi-enabled smart home hub** that allows a user to connect to their smart devices (such as Sonos, Philips Hue etc).
+It also works together with the `Senic Nuimo <https://www.senic.com/en/nuimo>`_, our very own Bluetooth Low Energy controller for smart devices and significantly extends its usefulness by eliminating the need to having it connected to a smart phone or tablet.
 
 .. pull-quote::
 
@@ -54,13 +54,12 @@ Hardware Platform: NanoPi Neo
 
 The Senic Hub is powered by the `NanoPi Neo <http://wiki.friendlyarm.com/wiki/index.php/NanoPi_NEO>`_, a tiny (4x4 cm) but powerful single-board computer equipped with an Allwinner H3 Quad-core 1.2GHz CPU and 512 MB DDR3 RAM.
 
-One of the most decisive factors in favour of this board was its low price.
-The other is the fact that it is actually *designed to be included in a product* -- unlike, say, more commonly known, *fruit-flavoured boards* such as the raspberry PI etc. which are explicitly targetted at hobbyists and students to experiment with.
+One of the most decisive factors in favour of this board is the fact that it is actually *designed to be included in a product* -- unlike, say, more commonly known, "fruit-flavoured" boards such as the Raspberry Pi etc. which are explicitly targetted at hobbyists and students to experiment with.
 
 However, we found that satisfactory runtime stability, heat dissipation etc. were basically not achievable with those offerings.
 
 We ship it with a 2 GB high-speed memory card that stores the operating system, software stack and user data.
-More importantly, we extend it with `carefully chosen <https://github.com/getsenic/wifi-ble-link-quality-benchmark>`_ high class **Wi-Fi, Bluetooth 3.0 and Bluetooth 4.0 dongles** to provide the best possible wireless connectivity within the given physical restraints.
+More importantly, we extend it with `carefully chosen <https://github.com/getsenic/wifi-ble-link-quality-benchmark>`_ high class **Wi-Fi, Bluetooth 3.0 and Bluetooth 4.0 dongles** to provide the best possible wireless connectivity within the given physical constraints.
 
 
 Operating System: Linux
@@ -77,7 +76,7 @@ We also wouldn't be able to stand behind a product that runs 24/7 in the homes a
 .. note::
 
     During our evaluation phase we also considered using one of the many BSD flavours, specifically `FreeBSD <https://www.freebsd.org/>`_ because it has a proven track record in the area of stability and security plus a long history of running on the tiniest of platforms long before the term "Internet of Things" was even coined.
-    We did however find that while the `H3 is pretty well supported <https://wiki.freebsd.org/FreeBSD/arm/Allwinner>`_, support for bluetooth is lagging behind and in the case of BLE currently non-existent and so we abandoned that approach.
+    We did however find that while the `H3 is pretty well supported <https://wiki.freebsd.org/FreeBSD/arm/Allwinner>`_, support for Bluetooth is lagging behind and in the case of BLE currently non-existent and so we abandoned that approach.
 
 This pretty much left us with Linux which offers a much broader support for such types of boards, most notably including BLE.
 
@@ -122,8 +121,8 @@ Keeping up with the sheer volume of new smart devices being launched is nearly i
 `Home Assistant <https://home-assistant.io>`_ has exactly that.
 It supports a massive number of devices and has established a large community of developers who contribute and improve the support for various smart devices.
 
-One of the reasons it *can* support such a large number is its extremely well thought-out *modular structure*.
-One of its core modules is a sophisticated *event model* and *state machine* that we can conveniently use for our own needs without having to re-invent the wheel.
+One of the reasons it *can* support such a large number is its extremely well thought-out modular structure.
+One of its core modules is a sophisticated event model and state machine that we can conveniently use for our own needs without having to re-invent the wheel.
 
 Oh, and it, too, is written in Python.
 

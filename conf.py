@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+from datetime import date
 
 # sphinx settings
 extensions = [
@@ -20,7 +20,7 @@ exclude_patterns = ['**/.repo', '**/lib']
 # general substitutions
 project = 'Senic Developer Documentation'
 copyright = '2017'
-version = release = "0.0.0"
+today = str(date.today())
 
 # theme setup
 html_theme = "senic"
