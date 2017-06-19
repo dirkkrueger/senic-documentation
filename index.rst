@@ -32,7 +32,6 @@ System Overview
 ===============
 
 .. image:: hub-software-components.png
-   :scale: 80 %
 
 
 Decisions, decisions...

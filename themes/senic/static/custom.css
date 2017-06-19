@@ -112,6 +112,11 @@ div.body pre {
   font-size: 14px;
 }
 
+image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 blockquote.pull-quote {
   margin: 0;
   border: 1px solid #ccc;
