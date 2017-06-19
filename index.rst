@@ -31,7 +31,7 @@ Instead we would like to promote wellbeing by creating connected devices, experi
 System Overview
 ===============
 
-.. image:: hub-software-components.png
+.. image:: covi-hub-system-components.png
 
 
 Decisions, Decisions...
