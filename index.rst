@@ -34,7 +34,7 @@ System Overview
 .. image:: hub-software-components.png
 
 
-Decisions, decisions...
+Decisions, Decisions...
 =======================
 
 
@@ -147,7 +147,7 @@ Then the Hub tries to connect its Wi-Fi adapter to the user's network and lets o
 Once the Hub is connected to the user's Wi-Fi network all further communications will continue through the Hub's REST API over HTTP.
 
 
-Details, details
+Details, Details
 ================
 
 Below you can find links to the nitty-gritty details
