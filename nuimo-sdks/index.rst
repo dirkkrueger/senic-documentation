@@ -66,18 +66,6 @@ The Nuimo SDK for Windows devices. Requires BlueZ 5.43+ – Please find installa
 * `Nuimo Linux SDK (Python) for on GitHub <https://github.com/getsenic/nuimo-linux-python>`_
 
 
-Nuimo's BLE GATT Profile
-------------------------
-
-.. image:: gatt.png
-   :width: 100 px
-   :height: 100 px
-
-Using Nuimo’s Bluetooth Low Energy GATT profile you can connect to Nuimo directly without a platform-specific SDK.
-
-* `Nuimo's BLE GATT profile <https://www.senic.com/files/nuimo-gatt-profile.pdf>`_
-
-
 NodeJS SDK (3rd Party)
 ----------------------
 
@@ -88,6 +76,18 @@ NodeJS SDK (3rd Party)
 `nathankunicki <https://github.com/nathankunicki>`_ provides a Node JS module that a helps connect and communicate with Nuimo in Node JS applications. Please note that we do not provide support for this library, use the `repository's issues section <https://github.com/nathankunicki/nuimojs/issues>`_ instead.
 
 * `Nuimo JS Module maintained by nathankunicki on GitHub <https://github.com/nathankunicki/nuimojs>`_
+
+
+Nuimo's BLE GATT Profile
+------------------------
+
+.. image:: gatt.png
+   :width: 100 px
+   :height: 100 px
+
+Using Nuimo’s Bluetooth Low Energy GATT profile you can connect to Nuimo directly without a platform-specific SDK.
+
+* `Nuimo's BLE GATT profile <https://www.senic.com/files/nuimo-gatt-profile.pdf>`_
 
 
 WebSocket Server for MacOS
