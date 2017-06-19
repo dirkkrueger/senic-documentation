@@ -97,7 +97,7 @@ WebSocket Server for MacOS
    :width: 100 px
    :height: 100 px
 
-If your favorite programming framework/language (e.g. JavaScript, Java, Processing) doesn't support access to Bluetooth Low Energy devices, `download and run the WebSocket Server for MacOS <https://www.senic.com/files/nuimo-websocket-server-osx-1.0.0.zip>`_ on your Mac. The app provides web sockets to read Nuimo input events and to write LED matrices from any programming language with web socket support. `Checkout the github repository  for documentation and code.
+If your favorite programming framework/language (e.g. JavaScript, Java, Processing) doesn't support access to Bluetooth Low Energy devices, `download and run the WebSocket Server for MacOS <https://www.senic.com/files/nuimo-websocket-server-osx-1.0.0.zip>`_ on your Mac. The app provides web sockets to read Nuimo input events and to write LED matrices from any programming language with web socket support. `Checkout the github repository <https://github.com/getsenic/nuimo-websocket-server-osx>`_ for documentation and code.
 
 * `WebSocket Server App for MacOS <https://www.senic.com/files/nuimo-websocket-server-osx-1.0.0.zip>`_
 * `Source code of WebSocket for MacOS on GitHub <https://github.com/getsenic/nuimo-websocket-server-osx>`_
