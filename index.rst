@@ -1,29 +1,29 @@
 .. _main_index:
 
-*********************************
-Senic Hub Technical Documentation
-*********************************
+**************************************************
+Senic COVI and Senic Hub – Technical Documentation
+**************************************************
 
 :Author: Senic GmbH
 :Last Updated: |today|
 
 
-What is the Senic Hub
-=====================
+What is Senic COVI
+==================
 
-The Senic Hub is a **Bluetooth 3.0, Bluetooth Low Energy 4.0 and Wi-Fi-enabled smart home hub** that allows a user to connect to their smart devices (such as Sonos, Philips Hue etc).
-It also works together with the `Senic Nuimo <https://www.senic.com/en/nuimo>`_, our very own Bluetooth Low Energy controller for smart devices and significantly extends its usefulness by eliminating the need to having it connected to a smart phone or tablet.
+Senic COVI is a **Bluetooth Low Energy 4.0, Wi-Fi and Alexa speech-enabled smart home lamp** that allows users to connect and control to their smart devices (such as Sonos, Philips Hue etc). It also works together with the `Senic Nuimo <https://www.senic.com/en/nuimo>`_, our very own Bluetooth Low Energy controller for smart devices and significantly extends its capabilities by eliminating the need to have a smart phone or tablet as a bridge.
+
+The Senic Hub is a smaller version that serves the same purpose of being a versatile smart home hub to connect with Nuimo and smart devices. Apart from the lighting feature and Alexa speech support, the Senic Hub is built on the same software stack as Senic COVI.
 
 .. pull-quote::
 
-    The software stack powering the hub is not only entirely built on many great open source projects (surprise!) but we also decided to open up our own stack from the very start -- and this here is its documentation.
+    The software stack powering COVI is not only entirely built on many great open source projects (surprise!) but we also decided to open up our own stack from the very start -- and this here is its documentation.
 
 
+Why We Built the Senic COVI
+===========================
 
-Why We Built the Senic Hub
-==========================
-
-The `Senic Hub <http://blog.senic.com/posts/what-were-building-next>`_ is the first major step in Senic’s vision to make technology that is `not focused on ‘stickiness’ <http://blog.senic.com/posts/the-problem-of-attention>`_ but on `wellbeing for the human <http://blog.senic.com/posts/design-for-wellbeing>`_.
+`Senic COVI <http://blog.senic.com/posts/what-were-building-next>`_ is the first major step in Senic’s vision to make technology that is `not focused on ‘stickiness’ <http://blog.senic.com/posts/the-problem-of-attention>`_ but on `wellbeing for the human <http://blog.senic.com/posts/design-for-wellbeing>`_.
 At Senic, we see a big problem in companies creating apps and products that try to maximize the time that their users spent engaged with them.
 Instead we would like to promote wellbeing by creating connected devices, experiences, interfaces and systems that provide users with seamless technological experiences, without constantly demanding or even just encouraging their attention or focus.
 
