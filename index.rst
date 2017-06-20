@@ -59,7 +59,7 @@ Hardware Platform: NanoPi Neo
    :width: 103 px
    :height: 92 px
 
-The Senic Hub is powered by the `NanoPi Neo <http://wiki.friendlyarm.com/wiki/index.php/NanoPi_NEO>`_, a tiny (4x4 cm) but powerful single-board computer equipped with an Allwinner H3 Quad-core 1.2GHz CPU and 512 MB DDR3 RAM.
+Senic COVI and Senic Hub are powered by the `NanoPi Neo <http://wiki.friendlyarm.com/wiki/index.php/NanoPi_NEO>`_, a tiny (4x4 cm) but powerful single-board computer equipped with an Allwinner H3 Quad-core 1.2GHz CPU and 512 MB DDR3 RAM.
 
 One of the most decisive factors in favour of this board is the fact that it is actually *designed to be included in a product* -- unlike, say, more commonly known, "fruit-flavoured" boards such as the Raspberry Pi etc. which are explicitly targetted at hobbyists and students to experiment with.
 
@@ -77,7 +77,7 @@ Operating System: Linux
    :width: 100 px
    :height: 118 px
 
-For the Senic Hub, we wanted to use open-source components as much as possible, not just because we ourselves are avid users of and even contributors to `Free and Open-Source Software <https://en.wikipedia.org/wiki/Free_and_open-source_software>`_.
+For COVI, we wanted to use open-source components as much as possible, not just because we ourselves are avid users of and even contributors to `Free and Open-Source Software <https://en.wikipedia.org/wiki/Free_and_open-source_software>`_.
 We also wouldn't be able to stand behind a product that runs 24/7 in the homes and workplaces of our users and which contains proprietary code whose actual workings could not be verified by ourselves or third parties.
 
 .. note::
@@ -92,7 +92,7 @@ The NanoPi itself comes with `various flavours of Linux <http://wiki.friendlyarm
 In the end we opted for building our own custom distribution using the well-established `yocto project <https://www.yoctoproject.org/>`_.
 This allows us to create a fine-tuned distribution without having to start from scratch and importantly we can still benefit from upstream mainline updates, be they security related, performance wise or new features.
 
-Also, reducing the amount of code on the system as well as the number of running processes significantly reduces the attack surface for malware -- we definitely want to do all we can to avoid the Senic Hub becoming part of the next botnet!
+Also, reducing the amount of code on the system as well as the number of running processes significantly reduces the attack surface for malware -- we definitely want to do all we can to avoid COVI and the Senic Hub becoming part of the next botnet!
 
 
 Programming Language: Python
@@ -103,7 +103,7 @@ Programming Language: Python
    :width: 115 px
    :height: 112 px
 
-Why did we decide that Python was the right programming language for the Hub?
+Why did we decide that Python was the right programming language for COVI?
 Actually, a better question might be: Why *shouldn’t* we use Python?
 If you take a deep dive into the open-source smart home world, you will find a number of do-it-yourself projects and Python is often the language of choice for these DIYers.
 This adoption of Python is primarily due to the sheer number of ready-made libraries and Python’s availability for many different operating systems.
@@ -117,21 +117,21 @@ Provisioning the Hub with Wi-Fi: Bluenet
 ========================================
 
 A customer's `first experience while unboxing a product is crucial <https://blog.ordoro.com/2016/04/19/7-best-unboxing-experiences/>`_.
-The very next thing after connecting the Senic Hub to a power plug is to connect the Hub to the local Wi-Fi.
+The very next thing after connecting the COVI to a power plug is to connect COVI to the local Wi-Fi.
 Only then can we automatically find all the user's smart devices in their home network.
-Providing Wi-Fi and internet access to the Hub furthermore enables our integrated Alexa speech service to work.
-But how does the user tell the Hub which Wi-Fi to connect to?
+Providing Wi-Fi and internet access to COVI furthermore enables our integrated Alexa speech service to work.
+But how does the user tell COVI which Wi-Fi to connect to?
 Since we want to make this process as simple as possible, only wireless technologies qualify.
 
-The usual approach of creating an adhoc Wi-Fi network was quickly disqualified, though, since we need to send sensitive Wi-Fi credentials to the Hub.
-Also, we don't want our users to have to manually change their active Wi-Fi connection on their smartphones to join the Hub's ad-hoc Wi-Fi network.
+The usual approach of creating an adhoc Wi-Fi network was quickly disqualified, though, since we need to send sensitive Wi-Fi credentials to COVI.
+Also, we don't want our users to have to manually change their active Wi-Fi connection on their smartphones to join COVI's ad-hoc Wi-Fi network.
 After evaluating `various wireless provisioning methods <https://www.linkedin.com/pulse/wifi-configuration-iot-devices-dan-walkes>`_, we decided to go with the best solution and implemented the world's first Wi-Fi provisioning library for Bluetooth Low Energy-enabled Linux devices and to call it `Bluenet <https://github.com/getsenic/senic-hub/tree/master/senic_hub/bluenet>`_.
 
-Using Bluenet, the Hub's mobile setup app is able to automatically discover and connect to the Hub via Bluetooth Low Energy.
-After connecting, the app requests and presents all Wi-Fi networks (SSID names) that the Hub is seeing nearby.
+Using Bluenet, COVI's mobile setup app is able to automatically discover and connect to COVI via Bluetooth Low Energy.
+After connecting, the app requests and presents all Wi-Fi networks (SSID names) that COVI is seeing nearby.
 We ask the user to then select her own Wi-Fi home network and let her enter her password.
-Then the Hub tries to connect its Wi-Fi adapter to the user's network and lets our setup app know whether it succeeded.
-Once the Hub is connected to the user's Wi-Fi network all further communications will continue through the Hub's REST API over HTTP.
+Then COVI tries to connect its Wi-Fi adapter to the user's network and lets our setup app know whether it succeeded.
+Once COVI is connected to the user's Wi-Fi network all further communications will continue through COVI's REST API over HTTP.
 
 
 Details, Details
