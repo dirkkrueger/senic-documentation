@@ -8,6 +8,14 @@ Senic COVI and Senic Hub – Technical Documentation
 :Last Updated: |today|
 
 
+Live on Kickstarter
+===================
+
+.. image:: covi-kickstarter.jpg
+   :target: https://www.kickstarter.com/projects/802159142/covi-speech-enabled-light-and-open-source-smart-ho
+
+`Senic COVI, our speech-enabled lamp and open-source hub is now live on Kickstarter! <https://www.kickstarter.com/projects/802159142/covi-speech-enabled-light-and-open-source-smart-ho>`_
+
 What is Senic COVI
 ==================
 
