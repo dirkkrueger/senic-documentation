@@ -105,27 +105,6 @@ The Python programming language is currently (as of June 2017) the `fourth most 
 In the end it was important for us, to not just select a programming language that *we* were comfortable with but also for a significant amount of other people who then could contribute or simply hack the device or easily learn how to do so.
 
 
-Home Controlling and Automation: Home Assistant
------------------------------------------------
-
-.. image:: home-assistant.png
-   :align: right
-   :width: 90 px
-   :height: 90 px
-
-Despite being a relatively new market, the *smart home* is already seeing tons of different connected devices such as speakers, light, switches, thermostats or electronic door locks from thousands of companies.
-The elephant in the room, though, is that each of these devices is using different communication channels and protocols.
-Keeping up with the sheer volume of new smart devices being launched is nearly impossible without a strong developer community.
-
-`Home Assistant <https://home-assistant.io>`_ has exactly that.
-It supports a massive number of devices and has established a large community of developers who contribute and improve the support for various smart devices.
-
-One of the reasons it *can* support such a large number is its extremely well thought-out modular structure.
-One of its core modules is a sophisticated event model and state machine that we can conveniently use for our own needs without having to re-invent the wheel.
-
-Oh, and it, too, is written in Python.
-
-
 Provisioning the Hub with Wi-Fi: Bluenet
 ========================================
 
