@@ -41,7 +41,7 @@ The Nuimo SDK for Android devices. Requires Android 4.3+.
 * `Nuimo Emulator for Android on GitHub <https://github.com/getsenic/nuimo-emulator-android>`_
 
 
-Winwdows SDK
+Windows SDK
 ------------
 
 .. image:: windows.png
